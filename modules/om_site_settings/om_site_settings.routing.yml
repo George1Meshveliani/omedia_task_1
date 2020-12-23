@@ -1,0 +1,7 @@
+om_site_settings.site_settings_form:
+  path: '/admin/config/development/om_site_settings'
+  defaults:
+    _form: '\Drupal\om_site_settings\Form\SiteSettingsForm'
+    _title: 'Site Settings Form'
+  requirements:
+    _access: 'TRUE'
