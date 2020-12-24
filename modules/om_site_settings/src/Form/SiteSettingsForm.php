@@ -40,6 +40,7 @@ class SiteSettingsForm extends FormBase {
       '#weight' => '1',
       // Partial Validation - Website Code
       '#maxlength' => 8,
+      '#required' => true,
     ];
     $form['website_description'] = [
       '#type' => 'text_format',
