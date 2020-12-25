@@ -143,20 +143,26 @@ class SiteSettingsForm extends ConfigFormBase
   /**
    * {@inheritdoc}
    */
-  public function validateForm(array &$form, FormStateInterface $form_state)
-  {
+
+
+    public function validateForm(array &$form, FormStateInterface $form_state) {
     //  Fulfilled Validation - Website Code
-
     $website_code = $form_state->getValue('website_code');
-
     if (substr($website_code, 0, 3) !== "OM-") {
-      $form_state->setErrorByName('website_code', $this->t("Website Code should start with 'OM-' e.g: 'OM-12345'"));
+      $form_state->setErrorByName(
+        'website_code',
+        $this->t("Website Code should start with 'OM-' e.g: 'OM-12345'")
+      );
     }
-
-    if (strlen($website_code) < 8 || !is_numeric(substr($website_code, 3, 5))) {
-      $form_state->setErrorByName('website_code', $this->t("Input should contain 5 numbers e.g: 'OM-12345'"));
+    if (
+      strlen($website_code) < 8
+      || !is_numeric(substr($website_code, 3, 5))
+    ) {
+      $form_state->setErrorByName(
+        'website_code',
+        $this->t("Input should contain 5 numbers e.g: 'OM-12345'")
+      );
     }
-
 
     parent::validateForm($form, $form_state);
   }
