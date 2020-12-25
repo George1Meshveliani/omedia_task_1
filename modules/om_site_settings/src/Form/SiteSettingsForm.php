@@ -174,7 +174,7 @@ class SiteSettingsForm extends ConfigFormBase
     $fields = [
       'archive_length',
       'website_code',
-      'description',
+      'website_description',
     ];
 
     foreach ($fields as $field_key) {
