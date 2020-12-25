@@ -131,6 +131,7 @@ class SiteSettingsForm extends ConfigFormBase
       '#format' => $config->get('website_description')['format'] ?? 'full_html',
       '#default_value' => $config->get('website_description')['value'] ?? '',
       '#weight' => '1',
+      '#required' => true,
     ];
     $form['submit'] = [
       '#type' => 'submit',
