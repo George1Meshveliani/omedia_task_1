@@ -2,6 +2,14 @@ om_site_settings.site_settings_form:
   path: '/admin/config/development/om_site_settings'
   defaults:
     _form: '\Drupal\om_site_settings\Form\SiteSettingsForm'
-    _title: 'Site Settings Form'
+    _title: 'Site Settings'
   requirements:
     _access: 'TRUE'
+
+om_site_settings.omedia_settings_controller_buildController:
+  path: '/om_site_settings/controller'
+  defaults:
+    _controller: '\Drupal\om_site_settings\Controller\OmediaSettingsController::buildController'
+    _title: 'Controller'
+  requirements:
+    _permission: 'access content'

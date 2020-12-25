@@ -1,0 +1,5 @@
+om_site_settings.site_settings_form:
+  title: Omedia Site Settings
+  description: Omedia Site Settings Form
+  parent: system.admin_config_system
+  route_name: om_site_settings.site_settings_form
