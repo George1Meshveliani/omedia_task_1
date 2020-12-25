@@ -184,7 +184,7 @@ class SiteSettingsForm extends ConfigFormBase
 
     }
 
-    foreach ($form_state->getValues($field_key) as $key => $value) {
+    foreach ($form_state->getValues() as $key => $value) {
       \Drupal::messenger()->addMessage($key . ': ' . ($key === 'text_format'?$value['value']:$value));
     }
 
