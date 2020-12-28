@@ -24,9 +24,9 @@ class OmediaSettingsController extends ControllerBase {
 	      <caption>Last changes</caption>
 	      <thead>
 	          <tr>
-		            <th>Archive Length</th>
+		            <th>Archive Length:</th>
 		            <th>Website Code:</th>
-		            <th>Website Description</th>
+		            <th>Website Description:</th>
 	          </tr>
 	      </thead>
 	      <tbody>
@@ -40,7 +40,7 @@ class OmediaSettingsController extends ControllerBase {
         [
         '@archive_length' => $archive_length,
         '@website_code' => $website_code,
-        '@website_description' => $website_description
+        '@website_description' => $website_description,
       ]),
     ];
 

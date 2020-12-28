@@ -9,6 +9,7 @@ use Drupal\Core\Config\ExtensionInstallStorage;
 use Drupal\Core\Form\ConfigFormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+use Drupal\Core\Link;
 
 
 /**
@@ -185,9 +186,11 @@ class SiteSettingsForm extends ConfigFormBase
 
     }
 
-    foreach ($form_state->getValues() as $key => $value) {
-      \Drupal::messenger()->addMessage($key . ': ' . ($key === 'text_format'?$value['value']:$value));
-    }
+
+      \Drupal::messenger()->addMessage(
+        "To see results go to: /drupal-9.0.8/om_site_settings/controller"
+      );
+
 
   }
 }
