@@ -188,8 +188,12 @@ class SiteSettingsForm extends ConfigFormBase
 
 
       \Drupal::messenger()->addMessage(
-        "To see results go to: Omedia Site Settings section"
+        "To see latest result go to: 'Omedia Site Settings section'."
       );
+
+     \Drupal::messenger()->addMessage(
+      "To see all results go to: 'All Data section'."
+     );
 
 
   }

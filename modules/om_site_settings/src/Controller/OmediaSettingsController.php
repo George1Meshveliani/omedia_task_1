@@ -29,6 +29,7 @@ class OmediaSettingsController extends ControllerBase {
 		            <th>Website Description:</th>
 	          </tr>
 	      </thead>
+
 	      <tbody>
 	          <tr>
 		            <td>@archive_length</td>
