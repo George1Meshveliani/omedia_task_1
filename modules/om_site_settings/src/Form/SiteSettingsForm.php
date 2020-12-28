@@ -188,7 +188,7 @@ class SiteSettingsForm extends ConfigFormBase
 
 
       \Drupal::messenger()->addMessage(
-        "To see results go to: /drupal-9.0.8/om_site_settings/controller"
+        "To see results go to: Omedia Site Settings section"
       );
 
 
