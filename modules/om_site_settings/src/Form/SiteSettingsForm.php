@@ -9,7 +9,8 @@ use Drupal\Core\Config\ExtensionInstallStorage;
 use Drupal\Core\Form\ConfigFormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
-use Drupal\Core\Link;
+
+
 
 
 /**
@@ -180,7 +181,7 @@ class SiteSettingsForm extends ConfigFormBase
     ];
 
     foreach ($fields as $field_key) {
-      $this->config('om_site_settings.site_settings')
+      $new_event =  $this->config('om_site_settings.site_settings')
         ->set($field_key, $form_state->getValue($field_key))
         ->save();
 
@@ -194,6 +195,7 @@ class SiteSettingsForm extends ConfigFormBase
      \Drupal::messenger()->addMessage(
       "To see all results go to: 'All Data section'."
      );
+
 
 
   }
