@@ -31,6 +31,7 @@ form .field-add-more-submit {
 .form-actions {
   margin-top: 1em;
   margin-bottom: 1em;
+  color: red;
 }
 tr.odd .form-item,
 tr.even .form-item {
@@ -52,21 +53,9 @@ label.option {
   padding: 0;
   font-size: inherit;
   font-weight: bold;
+  box-shadow: #0a65aa;
 }
-.form-checkboxes .form-item,
-.form-radios .form-item {
-  margin-top: 0.4em;
-  margin-bottom: 0.4em;
-}
-.form-type-radio .description,
-.form-type-checkbox .description {
-  margin-left: 2.4em; /* LTR */
-}
-[dir="rtl"] .form-type-radio .description,
-[dir="rtl"] .form-type-checkbox .description {
-  margin-right: 2.4em;
-  margin-left: 0;
-}
+
 .marker {
   color: #e00;
 }
@@ -89,20 +78,28 @@ abbr.ajax-changed {
 .form-item input.error,
 .form-item textarea.error,
 .form-item select.error {
-  border: 20px solid blue;
+  border: 2px solid darkred;
 }
 
 /* Inline error messages. */
 .form-item--error-message:before {
   display: inline-block;
-  width: 14px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   content: "";
   vertical-align: sub;
   background-size: contain;
 }
 
+
 h1 {
-  color: red;
+  display: block;
+  font-size: 39px;
+  color: green;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 70px;
+  text-shadow: #1f1f21;
 }
 
