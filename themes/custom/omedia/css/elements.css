@@ -53,7 +53,7 @@ label.option {
   padding: 0;
   font-size: inherit;
   font-weight: bold;
-  box-shadow: #0a65aa;
+  box-shadow: #100f0f;
 }
 
 .marker {
@@ -78,7 +78,8 @@ abbr.ajax-changed {
 .form-item input.error,
 .form-item textarea.error,
 .form-item select.error {
-  border: 2px solid darkred;
+  border: 6px solid darkred;
+  border-radius: 25px;
 }
 
 /* Inline error messages. */
