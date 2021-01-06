@@ -10,7 +10,8 @@
 /sites/example.sites.php
 /sites/example.settings.local.php
 /sites/development.services.yml
-/sites/default/files
+/sites/default/files/
+
 /.csslintrc
 /.editorconfig
 /.eslintignore
